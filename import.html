@@ -1,0 +1,2568 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="css/libs.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/add_styles.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body class="body">
+    <aside class="aside">
+      <div class="aside__inner">
+        <div class="aside__head">
+          <a class="aside__logo" href="/"
+            ><img
+              class="logo"
+              src="./images/logo.svg"
+              width="171"
+              height="54"
+              alt="IDP logo" /><img
+              class="logo-min"
+              src="./images/logo-min.svg"
+              width="36"
+              height="19"
+              alt="IDP logo"
+          /></a>
+          <button
+            class="menu__close"
+            aria-label="Закрыть меню"
+            title="Закрыть меню"
+          >
+            <svg class="icon svg-cross-dims">
+              <use xlink:href="svgSprite/sprite.svg#cross"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="aside__body-wrapper scrollbar-outer">
+          <nav class="aside__body aside-menu">
+            <ul class="aside-menu__list">
+              <li class="aside-menu__item">
+                <div class="aside-menu__head">
+                  <a class="aside-menu__icon" href="/">
+                    <svg class="icon svg-basket-dims">
+                      <use
+                        xlink:href="svgSprite/sprite.svg#basket"
+                      ></use></svg></a
+                  ><a class="aside-menu__link" href="/">Товары</a>
+                  <button
+                    class="aside-menu__btn arrow-btn"
+                    aria-label="Показать все"
+                    title="Показать все"
+                  >
+                    <svg class="icon svg-dropdown-dims">
+                      <use xlink:href="svgSprite/sprite.svg#dropdown"></use>
+                    </svg>
+                  </button>
+                </div>
+                <ul class="aside-menu__submenu">
+                  <li class="aside-menu__subitem">
+                    <a class="aside-menu__sublink" href="/"
+                      ><span> Каталог</span></a
+                    >
+                  </li>
+                  <li class="aside-menu__subitem">
+                    <a class="aside-menu__sublink" href="/"
+                      ><span> Инвентари</span></a
+                    >
+                  </li>
+                  <li class="aside-menu__subitem">
+                    <a class="aside-menu__sublink" href="/"
+                      ><span> Избранное</span></a
+                    >
+                  </li>
+                  <li class="aside-menu__subitem">
+                    <a class="aside-menu__sublink" href="/"
+                      ><span> Проблемные товары</span></a
+                    >
+                  </li>
+                  <li class="aside-menu__subitem">
+                    <a class="aside-menu__sublink" href="/"
+                      ><span> Импорт</span></a
+                    >
+                  </li>
+                  <li class="aside-menu__subitem">
+                    <a class="aside-menu__sublink" href="/"
+                      ><span> Экспорт</span></a
+                    >
+                  </li>
+                  <li class="aside-menu__subitem">
+                    <a class="aside-menu__sublink" href="/"
+                      ><span> Ценовые правила</span></a
+                    >
+                  </li>
+                  <li class="aside-menu__subitem">
+                    <a class="aside-menu__sublink" href="/"
+                      ><span> Каналы сбыта</span></a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="aside-menu__item">
+                <div class="aside-menu__head active">
+                  <a class="aside-menu__icon" href="/">
+                    <svg class="icon svg-orders-dims">
+                      <use
+                        xlink:href="svgSprite/sprite.svg#orders"
+                      ></use></svg></a
+                  ><a class="aside-menu__link" href="/">Заказы</a>
+                  <button
+                    class="aside-menu__btn arrow-btn"
+                    aria-label="Показать все"
+                    title="Показать все"
+                  >
+                    <svg class="icon svg-dropdown-dims">
+                      <use xlink:href="svgSprite/sprite.svg#dropdown"></use>
+                    </svg>
+                  </button>
+                </div>
+                <ul class="aside-menu__submenu">
+                  <li class="aside-menu__subitem">
+                    <a class="aside-menu__sublink" href="/"
+                      ><span> Корзина</span></a
+                    >
+                  </li>
+                  <li class="aside-menu__subitem">
+                    <a class="aside-menu__sublink" href="/"
+                      ><span> Новые</span></a
+                    >
+                  </li>
+                  <li class="aside-menu__subitem">
+                    <a class="aside-menu__sublink" href="/"
+                      ><span> Активные заказы</span></a
+                    >
+                  </li>
+                  <li class="aside-menu__subitem">
+                    <a class="aside-menu__sublink" href="/"
+                      ><span> Выполненные</span></a
+                    >
+                  </li>
+                  <li class="aside-menu__subitem">
+                    <a class="aside-menu__sublink" href="/"
+                      ><span> Отмененные</span></a
+                    >
+                  </li>
+                  <li class="aside-menu__subitem">
+                    <a class="aside-menu__sublink" href="/"
+                      ><span> Финансы</span></a
+                    >
+                  </li>
+                  <li class="aside-menu__subitem">
+                    <a class="aside-menu__sublink" href="/"
+                      ><span> ТТН</span></a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="aside-menu__item">
+                <a class="aside-menu__head" href="/">
+                  <div class="aside-menu__icon">
+                    <svg class="icon svg-posting-dims">
+                      <use xlink:href="svgSprite/sprite.svg#posting"></use>
+                    </svg>
+                  </div>
+                  <div class="aside-menu__link">Отложенный постинг</div></a
+                >
+              </li>
+              <li class="aside-menu__item">
+                <a class="aside-menu__head" href="/">
+                  <div class="aside-menu__icon">
+                    <svg class="icon svg-synchronization-dims">
+                      <use
+                        xlink:href="svgSprite/sprite.svg#synchronization"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="aside-menu__link">Синхронизации</div></a
+                >
+              </li>
+              <li class="aside-menu__item">
+                <a class="aside-menu__head" href="/">
+                  <div class="aside-menu__icon">
+                    <svg class="icon svg-message-dims">
+                      <use xlink:href="svgSprite/sprite.svg#message"></use>
+                    </svg>
+                  </div>
+                  <div class="aside-menu__link">Сообщения</div></a
+                >
+              </li>
+              <li class="aside-menu__item">
+                <a class="aside-menu__head" href="/">
+                  <div class="aside-menu__icon">
+                    <svg class="icon svg-employee-dims">
+                      <use xlink:href="svgSprite/sprite.svg#employee"></use>
+                    </svg>
+                  </div>
+                  <div class="aside-menu__link">Сотрудники</div></a
+                >
+              </li>
+              <li class="aside-menu__item">
+                <div class="aside-menu__head">
+                  <a class="aside-menu__icon" href="/">
+                    <svg class="icon svg-settings-dims">
+                      <use
+                        xlink:href="svgSprite/sprite.svg#settings"
+                      ></use></svg></a
+                  ><a class="aside-menu__link" href="/">Настройки</a>
+                  <button
+                    class="aside-menu__btn arrow-btn"
+                    aria-label="Показать все"
+                    title="Показать все"
+                  >
+                    <svg class="icon svg-dropdown-dims">
+                      <use xlink:href="svgSprite/sprite.svg#dropdown"></use>
+                    </svg>
+                  </button>
+                </div>
+                <ul class="aside-menu__submenu">
+                  <li class="aside-menu__subitem">
+                    <a class="aside-menu__sublink" href="/"
+                      ><span> Профиль</span></a
+                    >
+                  </li>
+                  <li class="aside-menu__subitem">
+                    <a class="aside-menu__sublink" href="/"
+                      ><span> Социальные сети</span></a
+                    >
+                  </li>
+                  <li class="aside-menu__subitem">
+                    <a class="aside-menu__sublink" href="/"
+                      ><span> Пополнить баланс</span></a
+                    >
+                  </li>
+                  <li class="aside-menu__subitem">
+                    <a class="aside-menu__sublink" href="/"
+                      ><span> Мои счета</span></a
+                    >
+                  </li>
+                  <li class="aside-menu__subitem">
+                    <a class="aside-menu__sublink" href="/"
+                      ><span> Уведомления</span></a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="aside-menu__item">
+                <a class="aside-menu__head" href="/">
+                  <div class="aside-menu__icon">
+                    <svg class="icon svg-stoplist-dims">
+                      <use xlink:href="svgSprite/sprite.svg#stoplist"></use>
+                    </svg>
+                  </div>
+                  <div class="aside-menu__link">Черный список</div></a
+                >
+              </li>
+              <li class="aside-menu__item">
+                <a class="aside-menu__head" href="/">
+                  <div class="aside-menu__icon">
+                    <svg class="icon svg-news-dims">
+                      <use xlink:href="svgSprite/sprite.svg#news"></use>
+                    </svg>
+                  </div>
+                  <div class="aside-menu__link">Новости</div></a
+                >
+              </li>
+              <li class="aside-menu__item">
+                <div class="aside-menu__head">
+                  <a class="aside-menu__icon" href="/"
+                    ><svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.66663 6.6665C6.66663 6.00346 6.97392 5.36758 7.5209 4.89874C8.06788 4.4299 8.80974 4.1665 9.58329 4.1665H10.4166C11.1902 4.1665 11.932 4.4299 12.479 4.89874C13.026 5.36758 13.3333 6.00346 13.3333 6.6665C13.364 7.20755 13.218 7.74392 12.9174 8.19482C12.6168 8.64572 12.1779 8.98673 11.6666 9.1665C11.1554 9.40619 10.7164 9.86088 10.4158 10.4621C10.1152 11.0633 9.96927 11.7784 9.99996 12.4998"
+                        stroke="#232323"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M10 15.8335V15.8418"
+                        stroke="#232323"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg></a
+                  ><a class="aside-menu__link" href="/">Помощь</a>
+                  <button
+                    class="aside-menu__btn arrow-btn"
+                    aria-label="Показать все"
+                    title="Показать все"
+                  >
+                    <svg class="icon svg-dropdown-dims">
+                      <use xlink:href="svgSprite/sprite.svg#dropdown"></use>
+                    </svg>
+                  </button>
+                </div>
+                <ul class="aside-menu__submenu">
+                  <li class="aside-menu__subitem">
+                    <a class="aside-menu__sublink" href="/"
+                      ><span> Частые вопросы</span></a
+                    >
+                  </li>
+                  <li class="aside-menu__subitem">
+                    <a class="aside-menu__sublink" href="/"
+                      ><span> Техподдержка</span></a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </aside>
+    <div class="body__body">
+      <header class="header body__block">
+        <div class="header__left">
+          <nav class="header__menu menu">
+            <div class="menu__burger-wrapper">
+              <button
+                class="menu__burger"
+                aria-label="Открыть меню"
+                title="Открыть меню"
+              >
+                <span> </span><span> </span><span> </span>
+              </button>
+            </div>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="/"
+                  ><span class="menu__link-name">Распродажа</span
+                  ><span class="menu__link-icon">27</span></a
+                >
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="/"
+                  ><span class="menu__link-name">Новинки</span
+                  ><span class="menu__link-icon">5</span></a
+                >
+              </li>
+              <li class="menu__item menu__item--separetor">
+                <a class="menu__link" href="/"
+                  ><span class="menu__link-name">Пополнения товаров</span
+                  ><span class="menu__link-icon">1</span></a
+                >
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="/"
+                  ><span class="menu__link-name">ТТН</span
+                  ><span class="menu__link-icon menu__icon--warning">2</span></a
+                >
+              </li>
+              <li class="menu__item menu__item--separetor">
+                <a class="menu__link" href="/"
+                  ><span class="menu__link-name">Заказы</span
+                  ><span class="menu__link-icon menu__icon--danger">1</span></a
+                >
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="/"
+                  ><span class="menu__link-name">Каналы сбыта</span></a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__right">
+          <div class="header__right-btns">
+            <div class="header__btn-item">
+              <button class="header__btn btn-bg">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.00001 17.4998C5.92049 17.4998 6.66668 16.7536 6.66668 15.8332C6.66668 14.9127 5.92049 14.1665 5.00001 14.1665C4.07954 14.1665 3.33334 14.9127 3.33334 15.8332C3.33334 16.7536 4.07954 17.4998 5.00001 17.4998Z"
+                    stroke="#232323"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.1667 17.4998C15.0871 17.4998 15.8333 16.7536 15.8333 15.8332C15.8333 14.9127 15.0871 14.1665 14.1667 14.1665C13.2462 14.1665 12.5 14.9127 12.5 15.8332C12.5 16.7536 13.2462 17.4998 14.1667 17.4998Z"
+                    stroke="#232323"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.1667 14.1667H5.00001V2.5H3.33334"
+                    stroke="#232323"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M5 4.1665L16.6667 4.99984L15.8333 10.8332H5"
+                    stroke="#232323"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="header__btn-item">
+              <button class="header__btn btn-bg">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.5 16.6668L3.58333 13.4168C2.64704 12.032 2.30833 10.3922 2.63018 8.80207C2.95204 7.21197 3.91255 5.77987 5.33314 4.77204C6.75373 3.76421 8.53772 3.24923 10.3534 3.32285C12.1691 3.39647 13.8929 4.05368 15.2044 5.17228C16.5159 6.29089 17.3257 7.79477 17.4834 9.4043C17.6411 11.0138 17.1358 12.6195 16.0616 13.9228C14.9873 15.226 13.4172 16.1382 11.6432 16.4896C9.86911 16.8411 8.01184 16.6079 6.41667 15.8335L2.5 16.6668"
+                    stroke="#232323"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10 10V10.0083"
+                    stroke="#232323"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M6.66675 10V10.0083"
+                    stroke="#232323"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M13.3333 10V10.0083"
+                    stroke="#232323"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="header__btn-item">
+              <button class="header__btn btn-bg">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.33325 4.16667C8.33325 3.72464 8.50885 3.30072 8.82141 2.98816C9.13397 2.67559 9.55789 2.5 9.99992 2.5C10.4419 2.5 10.8659 2.67559 11.1784 2.98816C11.491 3.30072 11.6666 3.72464 11.6666 4.16667C12.6236 4.61919 13.4394 5.32361 14.0266 6.20442C14.6138 7.08523 14.9503 8.10923 14.9999 9.16667V11.6667C15.0626 12.1848 15.2461 12.6809 15.5356 13.1151C15.8251 13.5493 16.2125 13.9095 16.6666 14.1667H3.33325C3.78737 13.9095 4.17476 13.5493 4.46424 13.1151C4.75372 12.6809 4.93721 12.1848 4.99992 11.6667V9.16667C5.04955 8.10923 5.386 7.08523 5.97321 6.20442C6.56042 5.32361 7.37624 4.61919 8.33325 4.16667"
+                    stroke="#232323"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.5 14.1665V14.9998C7.5 15.6629 7.76339 16.2988 8.23223 16.7676C8.70107 17.2364 9.33696 17.4998 10 17.4998C10.663 17.4998 11.2989 17.2364 11.7678 16.7676C12.2366 16.2988 12.5 15.6629 12.5 14.9998V14.1665"
+                    stroke="#232323"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="header__btn-item">
+              <button class="header__btn btn-bg header__btn--help">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.66663 6.6665C6.66663 6.00346 6.97392 5.36758 7.5209 4.89874C8.06788 4.4299 8.80974 4.1665 9.58329 4.1665H10.4166C11.1902 4.1665 11.932 4.4299 12.479 4.89874C13.026 5.36758 13.3333 6.00346 13.3333 6.6665C13.364 7.20755 13.218 7.74392 12.9174 8.19482C12.6168 8.64572 12.1779 8.98673 11.6666 9.1665C11.1554 9.40619 10.7164 9.86088 10.4158 10.4621C10.1152 11.0633 9.96927 11.7784 9.99996 12.4998"
+                    stroke="#232323"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10 15.8335V15.8418"
+                    stroke="#232323"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="header__btn-item slide-toggle">
+              <button class="header__btn slide-toggle__btn btn-bg">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z"
+                    stroke="#232323"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M3 7.5H17"
+                    stroke="#232323"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M3 12.5H17"
+                    stroke="#232323"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M9.58322 2.5C8.17934 4.74968 7.43506 7.34822 7.43506 10C7.43506 12.6518 8.17934 15.2503 9.58322 17.5"
+                    stroke="#232323"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10.4165 2.5C11.8204 4.74968 12.5647 7.34822 12.5647 10C12.5647 12.6518 11.8204 15.2503 10.4165 17.5"
+                    stroke="#232323"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <div class="header__btn-body slide-toggle__body body__block">
+                <input
+                  class="visually-hidden"
+                  type="radio"
+                  id="ru"
+                  name="language"
+                  value="ru"
+                  checked
+                />
+                <label class="header__option" for="ru"> <span>RU</span></label>
+                <input
+                  class="visually-hidden"
+                  type="radio"
+                  id="ua"
+                  name="language"
+                  value="ua"
+                />
+                <label class="header__option" for="ua"> <span>UA</span></label>
+              </div>
+            </div>
+          </div>
+          <div class="header__avatar avatar slide-toggle">
+            <button class="avatar__btn slide-toggle__btn js-overlay">
+              <img
+                src="./images/avatar.png"
+                alt="Evhenii Bilyk"
+                width="40"
+                height="40"
+              />
+            </button>
+            <div class="avatar__body slide-toggle__body body__block">
+              <div class="avatar__personal">
+                <p class="avatar__name">Иван Иванов</p>
+                <p class="avatar__id">id2932382</p>
+                <div class="avatar__money">
+                  <p>Сумма к выплате: 37492</p>
+                  <p>Баланс: 3749 ₽</p>
+                  <a class="avatar__money-link link" href=""> Пополнить</a>
+                </div>
+                <ul class="avatar__menu">
+                  <li class="avatar__item">
+                    <a class="avatar__link" href="/"
+                      ><span class="avatar__icon">
+                        <svg class="icon svg-orders-dims">
+                          <use
+                            xlink:href="svgSprite/sprite.svg#orders"
+                          ></use></svg></span
+                      ><span class="avatar__link-title">Заказы</span></a
+                    >
+                  </li>
+                  <li class="avatar__item">
+                    <a class="avatar__link" href="/"
+                      ><span class="avatar__icon">
+                        <svg class="icon svg-basket-dims">
+                          <use
+                            xlink:href="svgSprite/sprite.svg#basket"
+                          ></use></svg></span
+                      ><span class="avatar__link-title">Корзина</span></a
+                    >
+                  </li>
+                  <li class="avatar__item">
+                    <a class="avatar__link" href="/"
+                      ><span class="avatar__icon">
+                        <svg class="icon svg-TTN-dims">
+                          <use
+                            xlink:href="svgSprite/sprite.svg#TTN"
+                          ></use></svg></span
+                      ><span class="avatar__link-title">ТТН</span></a
+                    >
+                  </li>
+                  <li class="avatar__item">
+                    <a class="avatar__link" href="/"
+                      ><span class="avatar__icon">
+                        <svg class="icon svg-finance-dims">
+                          <use
+                            xlink:href="svgSprite/sprite.svg#finance"
+                          ></use></svg></span
+                      ><span class="avatar__link-title">Финансы</span></a
+                    >
+                  </li>
+                  <li class="avatar__item">
+                    <a class="avatar__link" href="/"
+                      ><span class="avatar__icon">
+                        <svg class="icon svg-bill-dims">
+                          <use
+                            xlink:href="svgSprite/sprite.svg#bill"
+                          ></use></svg></span
+                      ><span class="avatar__link-title">Счета</span></a
+                    >
+                  </li>
+                  <li class="avatar__item">
+                    <a class="avatar__link" href="/"
+                      ><span class="avatar__icon">
+                        <svg class="icon svg-notification-dims">
+                          <use
+                            xlink:href="svgSprite/sprite.svg#notification"
+                          ></use></svg></span
+                      ><span class="avatar__link-title">Уведомления</span></a
+                    >
+                  </li>
+                </ul>
+                <button class="avatar__log-out">
+                  <span>Выйти из аккаунта</span>
+                  <svg class="icon svg-logOut-dims">
+                    <use xlink:href="svgSprite/sprite.svg#logOut"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="catalog">
+          <div class="content_height">
+            <!-- Import Page -->
+
+            <section>
+              <div class="row" id="js-container">
+
+                <div class="two_cols_header_2 two_cols_header_2_2">
+                  <div class="col col_1">
+                    <div class="title_wrapp">
+                      <h3>Импорт товаров</h3>
+                    </div>
+                  </div>
+                  <div class="col col_2">
+                    <div class="inlines_2 inlines_2_2 align_center align_right">
+                      <div>
+                        <button
+                          class="
+                            inventory__btn
+                            btn btn-bg btn--invers btn--min btn_2
+                          "
+                          data-popup-link="popup_3"
+                        >
+                          Добавить
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="good_import">
+                  <div class="good_import_header">
+                    <div class="col col_1">
+                      <p>
+                        Подготовьте файл импорта следуя
+                        <a href="#" class="blue_link">инструкции</a>
+                      </p>
+                    </div>
+                    <div class="col col_2">
+                      <div
+                        class="inlines_2 inlines_2_2 align_center align_right"
+                      >
+                        <div>
+                          <button
+                            class="
+                              inventory__btn
+                              btn btn-bg btn--invers btn--min btn_2
+                            "
+                          >
+                            Начать импорт
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="import_tree_cols">
+                    <div class="col col_1">
+                      <div class="radios_wrapp">
+                        <div>
+                          <label class="radio"
+                            ><input type="radio" name="radio_1" /><span
+                              >Загрузить файл с сервера</span
+                            ></label
+                          >
+                        </div>
+                        <div>
+                          <label class="radio"
+                            ><input type="radio" name="radio_1" /><span
+                              >Загрузить файл с компьютера</span
+                            >
+                            <i class="ch_icon"></i
+                          ></label>
+                        </div>
+                      </div>
+                      <button class="inventory__btn btn btn-bg btn--min btn_2">
+                        Добавить еще ссылку
+                      </button>
+                    </div>
+                    <div class="col col_2">
+                      <div class="two_cols_2">
+                        <div class="col col_1">
+                          <div class="inlines_4">
+                            <div class="width_2">
+                              <div class="catalog__search search search_inline">
+                                <label class="search__label">
+                                  <input
+                                    type="text"
+                                    inputmode="search"
+                                    id="search"
+                                    name="search"
+                                    placeholder="Введите ссылку"
+                                  />
+                                </label>
+                                <button class="search__reset" type="button">
+                                  Очистить
+                                </button>
+                                <button
+                                  class="search__btn icon-btn btn-bg"
+                                  type="submit"
+                                  aria-label="Найти"
+                                  title="Найти"
+                                >
+                                  <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 20 20"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M10 4.16699V15.8337"
+                                      stroke="#232323"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    />
+                                    <path
+                                      d="M4.16675 10H15.8334"
+                                      stroke="#232323"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    />
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="width_1">
+                              <div class="input_wrapp">
+                                <input
+                                  type="text"
+                                  placeholder="Название поставщика *"
+                                />
+                              </div>
+                            </div>
+                            <div class="width_1">
+                              <div class="input_wrapp">
+                                <input
+                                  type="text"
+                                  placeholder="Ресурс поставщика *"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col col_2">
+                          <div>
+                            <div class="icon_link_wrapp">
+                              <div>
+                                <p>Личные заметки</p>
+                              </div>
+                              <div>
+                                <button class="header__btn btn-bg">
+                                  <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 20 20"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M10 4.16699V15.8337"
+                                      stroke="#232323"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    />
+                                    <path
+                                      d="M4.16675 10H15.8334"
+                                      stroke="#232323"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    />
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="novisible_1024">
+                        <div class="dropdown_link_wrapp">
+                          <div class="inlines_2 inlines_2_4 align_right">
+                            <div>
+                              <a
+                                href="#"
+                                class="dropdown_link"
+                                data-slidedown-btn="dr_1_3"
+                                >Подробный отчет</a
+                              >
+                            </div>
+                            <div>
+                              <a
+                                href="#"
+                                class="dropdown_link"
+                                data-slidedown-btn="dr_1"
+                                >Настройки импорта</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col col_3">
+                      <div class="links_list_wrapp">
+                        <div class="links_list_header">
+                          <p>Как импортировать? <i class="i_icon_2"></i></p>
+                        </div>
+                        <ul class="links_list">
+                          <li><a href="#">Подробнее об импорте</a></li>
+                          <li><a href="#">Файлы ХLS, XLSX или CSV</a></li>
+                          <li><a href="#">Файл XML</a></li>
+                          <li><a href="#">Файл YML</a></li>
+                          <li><a href="#">Google файл</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="visible_1024">
+                    <div class="dropdown_link_wrapp dropdown_link_wrapp_3">
+                      <div class="inlines_2 inlines_2_4 align_right">
+                        <div>
+                          <a
+                            href="#"
+                            class="dropdown_link"
+                            data-slidedown-btn="dr_1_3"
+                            >Подробный отчет</a
+                          >
+                        </div>
+                        <div>
+                          <a
+                            href="#"
+                            class="dropdown_link"
+                            data-slidedown-btn="dr_1"
+                            >Настройки импорта</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="import_dropdown" data-slidedown="dr_1">
+                    <div class="import_tree_cols_2">
+                      <div class="col col_1">
+                        <div class="list_box">
+                          <div class="list_box_title">
+                            <h3>Информация, которую нужно обновить</h3>
+                          </div>
+                          <div class="checkboxes_list">
+                            <div>
+                              <label class="inventory__checkbox checkbox">
+                                <input
+                                  class="visually-hidden"
+                                  type="checkbox"
+                                /><span class="checkbox__input">Название</span>
+                              </label>
+                            </div>
+                            <div>
+                              <label class="inventory__checkbox checkbox">
+                                <input
+                                  class="visually-hidden"
+                                  type="checkbox"
+                                /><span class="checkbox__input">Группа</span>
+                              </label>
+                            </div>
+                            <div>
+                              <label class="inventory__checkbox checkbox">
+                                <input
+                                  class="visually-hidden"
+                                  type="checkbox"
+                                /><span class="checkbox__input"
+                                  >Код товара / Артикул</span
+                                >
+                              </label>
+                            </div>
+                            <div>
+                              <label class="inventory__checkbox checkbox">
+                                <input
+                                  class="visually-hidden"
+                                  type="checkbox"
+                                /><span class="checkbox__input"
+                                  >Поисковые запросы</span
+                                >
+                              </label>
+                            </div>
+                            <div>
+                              <label class="inventory__checkbox checkbox">
+                                <input
+                                  class="visually-hidden"
+                                  type="checkbox"
+                                /><span class="checkbox__input">Цена</span>
+                              </label>
+                            </div>
+                            <div>
+                              <label class="inventory__checkbox checkbox">
+                                <input
+                                  class="visually-hidden"
+                                  type="checkbox"
+                                /><span class="checkbox__input"
+                                  >Характеристики</span
+                                >
+                              </label>
+                            </div>
+                            <div>
+                              <label class="inventory__checkbox checkbox">
+                                <input
+                                  class="visually-hidden"
+                                  type="checkbox"
+                                /><span class="checkbox__input">Фото</span>
+                              </label>
+                            </div>
+                            <div>
+                              <label class="inventory__checkbox checkbox">
+                                <input
+                                  class="visually-hidden"
+                                  type="checkbox"
+                                /><span class="checkbox__input">Скидки</span>
+                              </label>
+                            </div>
+                            <div>
+                              <label class="inventory__checkbox checkbox">
+                                <input
+                                  class="visually-hidden"
+                                  type="checkbox"
+                                /><span class="checkbox__input">Наличие</span>
+                              </label>
+                            </div>
+                            <div>
+                              <label class="inventory__checkbox checkbox">
+                                <input
+                                  class="visually-hidden"
+                                  type="checkbox"
+                                /><span class="checkbox__input"
+                                  >Личные заметки</span
+                                >
+                              </label>
+                            </div>
+                            <div>
+                              <label class="inventory__checkbox checkbox">
+                                <input
+                                  class="visually-hidden"
+                                  type="checkbox"
+                                /><span class="checkbox__input"
+                                  >Количество</span
+                                >
+                              </label>
+                            </div>
+                            <div>
+                              <label class="inventory__checkbox checkbox">
+                                <input
+                                  class="visually-hidden"
+                                  type="checkbox"
+                                /><span class="checkbox__input"
+                                  >Код маркировки (GTIN)</span
+                                >
+                              </label>
+                            </div>
+                            <div>
+                              <label class="inventory__checkbox checkbox">
+                                <input
+                                  class="visually-hidden"
+                                  type="checkbox"
+                                /><span class="checkbox__input">Описание</span>
+                              </label>
+                            </div>
+                            <div>
+                              <label class="inventory__checkbox checkbox">
+                                <input
+                                  class="visually-hidden"
+                                  type="checkbox"
+                                /><span class="checkbox__input"
+                                  >Номер устройства (MPN)</span
+                                >
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col col_2">
+                        <div class="list_box">
+                          <div class="list_box_title">
+                            <h3>Общие настройки</h3>
+                          </div>
+                          <div class="checkboxes_list checkboxes_list_2">
+                            <div>
+                              <label class="inventory__checkbox checkbox">
+                                <input
+                                  class="visually-hidden"
+                                  type="checkbox"
+                                /><span class="checkbox__input"
+                                  >Обновить принудительно</span
+                                ><i class="ch_icon"></i>
+                              </label>
+                            </div>
+                            <div>
+                              <label class="inventory__checkbox checkbox">
+                                <input
+                                  class="visually-hidden"
+                                  type="checkbox"
+                                /><span class="checkbox__input"
+                                  >Загрузить позиции «В наличии» и «Под
+                                  заказ»</span
+                                ><i class="ch_icon"></i>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="list_box">
+                          <div class="list_box_title">
+                            <h3>Статус товаров, которых нет в файле</h3>
+                          </div>
+                          <div class="checkboxes_list checkboxes_list_2_2">
+                            <div>
+                              <label class="radio"
+                                ><input type="radio" /><span
+                                  >Оставить без изменений</span
+                                ></label
+                              >
+                            </div>
+                            <div>
+                              <label class="radio"
+                                ><input type="radio" /><span
+                                  >Нет в наличии</span
+                                ></label
+                              >
+                            </div>
+                            <div>
+                              <label class="radio"
+                                ><input type="radio" /><span
+                                  >Скрытые</span
+                                ></label
+                              >
+                            </div>
+                            <div>
+                              <label class="radio"
+                                ><input type="radio" /><span
+                                  >Удаленные</span
+                                ></label
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col col_3">
+                        <div class="list_box">
+                          <div class="list_box_title">
+                            <h3>Автоматическое обновление ссылки</h3>
+                          </div>
+                          <div class="checkboxes_list checkboxes_list_2_2">
+                            <div>
+                              <label class="radio"
+                                ><input type="radio" /><span
+                                  >Никогда</span
+                                ></label
+                              >
+                            </div>
+                            <div>
+                              <label class="radio"
+                                ><input type="radio" /><span
+                                  >Раз в 4 часа</span
+                                ></label
+                              >
+                            </div>
+                            <div>
+                              <label class="radio"
+                                ><input type="radio" /><span
+                                  >Раз в день</span
+                                ></label
+                              >
+                            </div>
+                            <div>
+                              <label class="radio"
+                                ><input type="radio" /><span
+                                  >Раз в неделю</span
+                                ></label
+                              >
+                            </div>
+                            <div>
+                              <label class="radio"
+                                ><input type="radio" /><span
+                                  >Раз в месяц</span
+                                ></label
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="import_dropdown_footer">
+                      <div class="inlines_2 inlines_2_2 align_right">
+                        <div>
+                          <button
+                            class="inventory__btn btn btn-bg btn--min btn_2"
+                          >
+                            Сбросить все
+                          </button>
+                        </div>
+                        <div>
+                          <button
+                            class="
+                              inventory__btn
+                              btn btn-bg btn--invers btn--min btn_2
+                            "
+                          >
+                            Сохранить настройки
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="import_dropdown" data-slidedown="dr_1_3">
+                    <div class="import_four_cols">
+                      <div class="col col_1">
+                        <div class="importfile_descript_item">
+                          <h4>Подробный импорт данных:</h4>
+                          <p>Обработано 992 из 992 позиций</p>
+                        </div>
+                      </div>
+                      <div class="col col_2">
+                        <ul class="list_2">
+                          <li>Всего позиций: 992</li>
+                          <li>Позиций с ошибками: 0</li>
+                          <li>Импортировано позиций: 992</li>
+                          <li>Создано товаров: 0</li>
+                        </ul>
+                      </div>
+                      <div class="col col_3">
+                        <ul class="list_2">
+                          <li>Создано разновидностей: 0</li>
+                          <li>Обновлено товаров: 992</li>
+                          <li>Без изменений: 0</li>
+                          <li>Не найдено в файле: 1533</li>
+                        </ul>
+                      </div>
+                      <div class="col col_4">
+                        <p class="green"><b>Файл успешно импортирован</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="good_import">
+                  <div class="good_import_header">
+                    <div class="col col_1">
+                      <p>
+                        Подготовьте файл импорта следуя
+                        <a href="#" class="blue_link">инструкции</a>
+                      </p>
+                    </div>
+                    <div class="col col_2">
+                      <div
+                        class="inlines_2 inlines_2_2 align_center align_right"
+                      >
+                        <div>
+                          <button
+                            class="header__btn btn-bg"
+                            data-popup-link="popup_1"
+                          >
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M3.33325 5.83301H16.6666"
+                                stroke="#232323"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              ></path>
+                              <path
+                                d="M8.33325 9.16699V14.167"
+                                stroke="#232323"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              ></path>
+                              <path
+                                d="M11.6667 9.16699V14.167"
+                                stroke="#232323"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              ></path>
+                              <path
+                                d="M4.16675 5.83301L5.00008 15.833C5.00008 16.275 5.17568 16.699 5.48824 17.0115C5.8008 17.3241 6.22472 17.4997 6.66675 17.4997H13.3334C13.7754 17.4997 14.1994 17.3241 14.5119 17.0115C14.8245 16.699 15.0001 16.275 15.0001 15.833L15.8334 5.83301"
+                                stroke="#232323"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              ></path>
+                              <path
+                                d="M7.5 5.83333V3.33333C7.5 3.11232 7.5878 2.90036 7.74408 2.74408C7.90036 2.5878 8.11232 2.5 8.33333 2.5H11.6667C11.8877 2.5 12.0996 2.5878 12.2559 2.74408C12.4122 2.90036 12.5 3.11232 12.5 3.33333V5.83333"
+                                stroke="#232323"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              ></path>
+                            </svg>
+                          </button>
+                        </div>
+                        <div>
+                          <button
+                            class="
+                              inventory__btn
+                              btn btn-bg btn--invers btn--min btn_2
+                            "
+                          >
+                            Начать импорт
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="import_tree_cols">
+                    <div class="col col_1">
+                      <div class="radios_wrapp">
+                        <div>
+                          <label class="radio"
+                            ><input type="radio" name="radio_1" /><span
+                              >Загрузить файл с сервера</span
+                            ></label
+                          >
+                        </div>
+                        <div>
+                          <label class="radio"
+                            ><input type="radio" name="radio_1" /><span
+                              >Загрузить файл с компьютера</span
+                            >
+                            <i class="ch_icon"></i
+                          ></label>
+                        </div>
+                      </div>
+                      <button class="inventory__btn btn btn-bg btn--min btn_2">
+                        Добавить еще ссылку
+                      </button>
+                    </div>
+                    <div class="col col_2">
+                      <!-- THIS BLOCK -->
+                      <div class="two_cols_2">
+                        <div class="col col_1">
+                          <div class="inlines_4">
+                            <div class="width_2">
+                              <div class="upload_file">
+                                <div>
+                                  <button
+                                    class="
+                                      inventory__btn
+                                      btn btn-bg btn--invers btn--min
+                                    "
+                                  >
+                                    Загрузить файл
+                                  </button>
+                                </div>
+                                <div>
+                                  <div class="file_item">
+                                    <p>Шланги на сайт.xml</p>
+                                    <button
+                                      type="button"
+                                      class="del_file"
+                                    ></button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="width_1">
+                              <div class="input_wrapp">
+                                <input
+                                  type="text"
+                                  placeholder="Название поставщика *"
+                                />
+                              </div>
+                            </div>
+                            <div class="width_1">
+                              <div class="input_wrapp">
+                                <input
+                                  type="text"
+                                  placeholder="Ресурс поставщика *"
+                                />
+                              </div>
+                            </div>
+                            <!-- <div class="width_1">
+                              <a href="#" class="blue_link">Подробный отчет</a>
+                            </div> -->
+                          </div>
+                        </div>
+                        <div class="col col_2">
+                          <div>
+                            <div class="icon_link_wrapp">
+                              <div>
+                                <p>Личные заметки</p>
+                              </div>
+                              <div>
+                                <button class="header__btn btn-bg">
+                                  <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 20 20"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M10 4.16699V15.8337"
+                                      stroke="#232323"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    />
+                                    <path
+                                      d="M4.16675 10H15.8334"
+                                      stroke="#232323"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    />
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- THIS BLOCK -->
+
+                      <div class="novisible_1024">
+                        <div class="dropdown_link_wrapp">
+                          <div class="inlines_2 align_right">
+                            <div>
+                              <a
+                                href="#"
+                                class="dropdown_link"
+                                data-slidedown-btn="dr_2_1"
+                                >Подробный отчет</a
+                              >
+                            </div>
+                            <div>
+                              <a
+                                href="#"
+                                class="dropdown_link"
+                                data-slidedown-btn="dr_2"
+                                >Настройки импорта</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col col_3">
+                      <div class="links_list_wrapp">
+                        <div class="links_list_header">
+                          <p>Как импортировать? <i class="i_icon_2"></i></p>
+                        </div>
+                        <ul class="links_list">
+                          <li><a href="#">Подробнее об импорте</a></li>
+                          <li><a href="#">Файлы ХLS, XLSX или CSV</a></li>
+                          <li><a href="#">Файл XML</a></li>
+                          <li><a href="#">Файл YML</a></li>
+                          <li><a href="#">Google файл</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="visible_1024">
+                    <div class="dropdown_link_wrapp dropdown_link_wrapp_3">
+                      <div class="inlines_2 inlines_2_4 align_right">
+                        <div>
+                          <a
+                            href="#"
+                            class="dropdown_link"
+                            data-slidedown-btn="dr_2_1"
+                            >Подробный отчет</a
+                          >
+                        </div>
+                        <div>
+                          <a
+                            href="#"
+                            class="dropdown_link"
+                            data-slidedown-btn="dr_2"
+                            >Настройки импорта</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="import_dropdown" data-slidedown="dr_2">
+                    <div class="import_tree_cols_2">
+                      <div class="col col_1">
+                        <div class="list_box">
+                          <div class="list_box_title">
+                            <h3>Информация, которую нужно обновить</h3>
+                          </div>
+                          <div class="checkboxes_list">
+                            <div>
+                              <label class="inventory__checkbox checkbox">
+                                <input
+                                  class="visually-hidden"
+                                  type="checkbox"
+                                /><span class="checkbox__input">Название</span>
+                              </label>
+                            </div>
+                            <div>
+                              <label class="inventory__checkbox checkbox">
+                                <input
+                                  class="visually-hidden"
+                                  type="checkbox"
+                                /><span class="checkbox__input">Группа</span>
+                              </label>
+                            </div>
+                            <div>
+                              <label class="inventory__checkbox checkbox">
+                                <input
+                                  class="visually-hidden"
+                                  type="checkbox"
+                                /><span class="checkbox__input"
+                                  >Код товара / Артикул</span
+                                >
+                              </label>
+                            </div>
+                            <div>
+                              <label class="inventory__checkbox checkbox">
+                                <input
+                                  class="visually-hidden"
+                                  type="checkbox"
+                                /><span class="checkbox__input"
+                                  >Поисковые запросы</span
+                                >
+                              </label>
+                            </div>
+                            <div>
+                              <label class="inventory__checkbox checkbox">
+                                <input
+                                  class="visually-hidden"
+                                  type="checkbox"
+                                /><span class="checkbox__input">Цена</span>
+                              </label>
+                            </div>
+                            <div>
+                              <label class="inventory__checkbox checkbox">
+                                <input
+                                  class="visually-hidden"
+                                  type="checkbox"
+                                /><span class="checkbox__input"
+                                  >Характеристики</span
+                                >
+                              </label>
+                            </div>
+                            <div>
+                              <label class="inventory__checkbox checkbox">
+                                <input
+                                  class="visually-hidden"
+                                  type="checkbox"
+                                /><span class="checkbox__input">Фото</span>
+                              </label>
+                            </div>
+                            <div>
+                              <label class="inventory__checkbox checkbox">
+                                <input
+                                  class="visually-hidden"
+                                  type="checkbox"
+                                /><span class="checkbox__input">Скидки</span>
+                              </label>
+                            </div>
+                            <div>
+                              <label class="inventory__checkbox checkbox">
+                                <input
+                                  class="visually-hidden"
+                                  type="checkbox"
+                                /><span class="checkbox__input">Наличие</span>
+                              </label>
+                            </div>
+                            <div>
+                              <label class="inventory__checkbox checkbox">
+                                <input
+                                  class="visually-hidden"
+                                  type="checkbox"
+                                /><span class="checkbox__input"
+                                  >Личные заметки</span
+                                >
+                              </label>
+                            </div>
+                            <div>
+                              <label class="inventory__checkbox checkbox">
+                                <input
+                                  class="visually-hidden"
+                                  type="checkbox"
+                                /><span class="checkbox__input"
+                                  >Количество</span
+                                >
+                              </label>
+                            </div>
+                            <div>
+                              <label class="inventory__checkbox checkbox">
+                                <input
+                                  class="visually-hidden"
+                                  type="checkbox"
+                                /><span class="checkbox__input"
+                                  >Код маркировки (GTIN)</span
+                                >
+                              </label>
+                            </div>
+                            <div>
+                              <label class="inventory__checkbox checkbox">
+                                <input
+                                  class="visually-hidden"
+                                  type="checkbox"
+                                /><span class="checkbox__input">Описание</span>
+                              </label>
+                            </div>
+                            <div>
+                              <label class="inventory__checkbox checkbox">
+                                <input
+                                  class="visually-hidden"
+                                  type="checkbox"
+                                /><span class="checkbox__input"
+                                  >Номер устройства (MPN)</span
+                                >
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col col_2">
+                        <div class="list_box">
+                          <div class="list_box_title">
+                            <h3>Общие настройки</h3>
+                          </div>
+                          <div class="checkboxes_list checkboxes_list_2">
+                            <div>
+                              <label class="inventory__checkbox checkbox">
+                                <input
+                                  class="visually-hidden"
+                                  type="checkbox"
+                                /><span class="checkbox__input"
+                                  >Обновить принудительно <i class="ch_icon"></i
+                                ></span>
+                              </label>
+                            </div>
+                            <div>
+                              <label class="inventory__checkbox checkbox">
+                                <input
+                                  class="visually-hidden"
+                                  type="checkbox"
+                                /><span class="checkbox__input"
+                                  >Загрузить позиции «В наличии» и «Под заказ»
+                                  <i class="ch_icon"></i
+                                ></span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="list_box">
+                          <div class="list_box_title">
+                            <h3>Статус товаров, которых нет в файле</h3>
+                          </div>
+                          <div class="checkboxes_list checkboxes_list_2_2">
+                            <div>
+                              <label class="radio"
+                                ><input type="radio" /><span
+                                  >Оставить без изменений</span
+                                ></label
+                              >
+                            </div>
+                            <div>
+                              <label class="radio"
+                                ><input type="radio" /><span
+                                  >Нет в наличии</span
+                                ></label
+                              >
+                            </div>
+                            <div>
+                              <label class="radio"
+                                ><input type="radio" /><span
+                                  >Скрытые</span
+                                ></label
+                              >
+                            </div>
+                            <div>
+                              <label class="radio"
+                                ><input type="radio" /><span
+                                  >Удаленные</span
+                                ></label
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col col_3">
+                        <div class="list_box">
+                          <div class="list_box_title">
+                            <h3>Автоматическое обновление ссылки</h3>
+                          </div>
+                          <div class="checkboxes_list checkboxes_list_2_2">
+                            <div>
+                              <label class="radio"
+                                ><input type="radio" /><span
+                                  >Никогда</span
+                                ></label
+                              >
+                            </div>
+                            <div>
+                              <label class="radio"
+                                ><input type="radio" /><span
+                                  >Раз в 4 часа</span
+                                ></label
+                              >
+                            </div>
+                            <div>
+                              <label class="radio"
+                                ><input type="radio" /><span
+                                  >Раз в день</span
+                                ></label
+                              >
+                            </div>
+                            <div>
+                              <label class="radio"
+                                ><input type="radio" /><span
+                                  >Раз в неделю</span
+                                ></label
+                              >
+                            </div>
+                            <div>
+                              <label class="radio"
+                                ><input type="radio" /><span
+                                  >Раз в месяц</span
+                                ></label
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="import_dropdown_footer">
+                      <div
+                        class="inlines_2 inlines_2_2 align_center align_right"
+                      >
+                        <div>
+                          <button
+                            class="inventory__btn btn btn-bg btn--min btn_2"
+                          >
+                            Сбросить все
+                          </button>
+                        </div>
+                        <div>
+                          <button
+                            class="
+                              inventory__btn
+                              btn btn-bg btn--invers btn--min btn_2
+                            "
+                          >
+                            Сохранить настройки
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="import_dropdown" data-slidedown="dr_2_1">
+                    <div class="import_four_cols">
+                      <div class="col col_1">
+                        <div class="importfile_descript_item">
+                          <h4>Подробный импорт данных:</h4>
+                          <p>Обработано 992 из 992 позиций</p>
+                        </div>
+                      </div>
+                      <div class="col col_2">
+                        <ul class="list_2">
+                          <li>Всего позиций: 992</li>
+                          <li>Позиций с ошибками: 0</li>
+                          <li>Импортировано позиций: 992</li>
+                          <li>Создано товаров: 0</li>
+                        </ul>
+                      </div>
+                      <div class="col col_3">
+                        <ul class="list_2">
+                          <li>Создано разновидностей: 0</li>
+                          <li>Обновлено товаров: 992</li>
+                          <li>Без изменений: 0</li>
+                          <li>Не найдено в файле: 1533</li>
+                        </ul>
+                      </div>
+                      <div class="col col_4">
+                        <p class="green"><b>Файл успешно импортирован</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- /Import Page -->
+          </div>
+
+          <nav class="pagination body__block">
+            <div class="pagination__btns">
+              <button
+                class="pagination__btn icon-btn btn-bg"
+                aria-label="В начало"
+                title="В начало"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.33301 10H16.6663"
+                    stroke="#232323"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8.33301 10L11.6663 13.3333"
+                    stroke="#232323"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8.33301 9.99984L11.6663 6.6665"
+                    stroke="#232323"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M3.33301 3.3335V16.6668"
+                    stroke="#232323"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <button
+                class="pagination__btn icon-btn btn-bg"
+                aria-label="Назад"
+                title="Назад"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0)">
+                    <path
+                      d="M12.4175 15.1674L7.36001 10.2785L12.4175 5.38965"
+                      stroke="#232323"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0">
+                      <rect width="20" height="20" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+
+              <div class="pagination__links">
+                <a class="pagination__link active" href="/">1 </a
+                ><a class="pagination__link" href="/">2 </a
+                ><a class="pagination__link" href="/">3 </a
+                ><a class="pagination__link" href="/">4 </a
+                ><a class="pagination__link" href="/">...</a>
+              </div>
+              <button
+                class="pagination__btn icon-btn btn-bg"
+                aria-label="Вперед"
+                title="Вперед"
+              >
+                <svg
+                  class="rot-180"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0)">
+                    <path
+                      d="M12.4175 15.1674L7.36001 10.2785L12.4175 5.38965"
+                      stroke="#232323"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0">
+                      <rect width="20" height="20" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+              <button
+                class="pagination__btn icon-btn btn-bg"
+                aria-label="В конец"
+                title="В конец"
+              >
+                <svg
+                  class="rot-180"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.33301 10H16.6663"
+                    stroke="#232323"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8.33301 10L11.6663 13.3333"
+                    stroke="#232323"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8.33301 9.99984L11.6663 6.6665"
+                    stroke="#232323"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M3.33301 3.3335V16.6668"
+                    stroke="#232323"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <label class="pagination__select" for="select">
+              <p class="pagination__select-text">Показывать по:&nbsp;</p>
+              <select id="select" name="pagination">
+                <option value="30">20</option>
+                <option value="30">30</option></select
+              ><span class="pagination__select-arrow"> </span>
+            </label>
+          </nav>
+        </div>
+      </main>
+    </div>
+
+    <div class="overlay"></div>
+    <div class="modal body__block">
+      <div class="modal__inner scrollbar-outer">
+        <div class="modal__content">
+          <div class="modal__head">
+            <h2 class="modal__title">Название:</h2>
+            <p class="modal__name">
+              Инвентарь 1 — Верхняя, летняя, спортивная одежда
+            </p>
+            <button class="modal__icon-btn" aria-label="check" title="check">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.49992 5.83301H4.99992C4.55789 5.83301 4.13397 6.0086 3.82141 6.32116C3.50885 6.63372 3.33325 7.05765 3.33325 7.49967V14.9997C3.33325 15.4417 3.50885 15.8656 3.82141 16.1782C4.13397 16.4907 4.55789 16.6663 4.99992 16.6663H12.4999C12.9419 16.6663 13.3659 16.4907 13.6784 16.1782C13.991 15.8656 14.1666 15.4417 14.1666 14.9997V12.4997"
+                  stroke="#232323"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M7.5 12.5H10L17.0833 5.41669C17.4149 5.08517 17.6011 4.63553 17.6011 4.16669C17.6011 3.69785 17.4149 3.24821 17.0833 2.91669C16.7518 2.58517 16.3022 2.39893 15.8333 2.39893C15.3645 2.39893 14.9149 2.58517 14.5833 2.91669L7.5 10V12.5Z"
+                  stroke="#232323"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M13.3333 4.16699L15.8333 6.66699"
+                  stroke="#232323"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="modal__body">
+            <h2 class="chanels__title text-center">Каналы сбыта</h2>
+            <ul class="chanels__list">
+              <li class="chanels__item">
+                <label class="checkbox">
+                  <input class="visually-hidden" type="checkbox" /><span
+                    class="checkbox__input chanels__checkbox"
+                    ><span class="chanels__img">
+                      <img src="./images/chanels-img.png" alt="chanel" /></span
+                    ><span class="chanels__text">Prom</span></span
+                  >
+                </label>
+              </li>
+              <li class="chanels__item">
+                <label class="checkbox">
+                  <input class="visually-hidden" type="checkbox" /><span
+                    class="checkbox__input chanels__checkbox"
+                    ><span class="chanels__img">
+                      <img src="./images/chanels-img.png" alt="chanel" /></span
+                    ><span class="chanels__text">Prom</span></span
+                  >
+                </label>
+              </li>
+              <li class="chanels__item">
+                <label class="checkbox">
+                  <input class="visually-hidden" type="checkbox" /><span
+                    class="checkbox__input chanels__checkbox"
+                    ><span class="chanels__img">
+                      <img src="./images/chanels-img.png" alt="chanel" /></span
+                    ><span class="chanels__text">Prom</span></span
+                  >
+                </label>
+              </li>
+              <li class="chanels__item">
+                <label class="checkbox">
+                  <input class="visually-hidden" type="checkbox" /><span
+                    class="checkbox__input chanels__checkbox"
+                    ><span class="chanels__img">
+                      <img src="./images/chanels-img.png" alt="chanel" /></span
+                    ><span class="chanels__text">Prom</span></span
+                  >
+                </label>
+              </li>
+              <li class="chanels__item">
+                <label class="checkbox">
+                  <input class="visually-hidden" type="checkbox" /><span
+                    class="checkbox__input chanels__checkbox"
+                    ><span class="chanels__img">
+                      <img src="./images/chanels-img.png" alt="chanel" /></span
+                    ><span class="chanels__text">Prom</span></span
+                  >
+                </label>
+              </li>
+              <li class="chanels__item">
+                <label class="checkbox">
+                  <input class="visually-hidden" type="checkbox" /><span
+                    class="checkbox__input chanels__checkbox"
+                    ><span class="chanels__img">
+                      <img src="./images/chanels-img.png" alt="chanel" /></span
+                    ><span class="chanels__text">Prom</span></span
+                  >
+                </label>
+              </li>
+              <li class="chanels__item">
+                <label class="checkbox">
+                  <input class="visually-hidden" type="checkbox" /><span
+                    class="checkbox__input chanels__checkbox"
+                    ><span class="chanels__img">
+                      <img src="./images/chanels-img.png" alt="chanel" /></span
+                    ><span class="chanels__text">Prom</span></span
+                  >
+                </label>
+              </li>
+              <li class="chanels__item">
+                <label class="checkbox">
+                  <input class="visually-hidden" type="checkbox" /><span
+                    class="checkbox__input chanels__checkbox"
+                    ><span class="chanels__img">
+                      <img src="./images/chanels-img.png" alt="chanel" /></span
+                    ><span class="chanels__text">Prom</span></span
+                  >
+                </label>
+              </li>
+              <li class="chanels__item">
+                <label class="checkbox">
+                  <input class="visually-hidden" type="checkbox" /><span
+                    class="checkbox__input chanels__checkbox"
+                    ><span class="chanels__img">
+                      <img src="./images/chanels-img.png" alt="chanel" /></span
+                    ><span class="chanels__text">Prom</span></span
+                  >
+                </label>
+              </li>
+              <li class="chanels__item">
+                <label class="checkbox">
+                  <input class="visually-hidden" type="checkbox" /><span
+                    class="checkbox__input chanels__checkbox"
+                    ><span class="chanels__img">
+                      <img src="./images/chanels-img.png" alt="chanel" /></span
+                    ><span class="chanels__text">Prom</span></span
+                  >
+                </label>
+              </li>
+              <li class="chanels__item">
+                <label class="checkbox">
+                  <input class="visually-hidden" type="checkbox" /><span
+                    class="checkbox__input chanels__checkbox"
+                    ><span class="chanels__img">
+                      <img src="./images/chanels-img.png" alt="chanel" /></span
+                    ><span class="chanels__text">Prom</span></span
+                  >
+                </label>
+              </li>
+              <li class="chanels__item">
+                <label class="checkbox">
+                  <input class="visually-hidden" type="checkbox" /><span
+                    class="checkbox__input chanels__checkbox"
+                    ><span class="chanels__img">
+                      <img src="./images/chanels-img.png" alt="chanel" /></span
+                    ><span class="chanels__text">Prom</span></span
+                  >
+                </label>
+              </li>
+              <li class="chanels__item">
+                <label class="checkbox">
+                  <input class="visually-hidden" type="checkbox" /><span
+                    class="checkbox__input chanels__checkbox"
+                    ><span class="chanels__img">
+                      <img src="./images/chanels-img.png" alt="chanel" /></span
+                    ><span class="chanels__text">Prom</span></span
+                  >
+                </label>
+              </li>
+              <li class="chanels__item">
+                <label class="checkbox">
+                  <input class="visually-hidden" type="checkbox" /><span
+                    class="checkbox__input chanels__checkbox"
+                    ><span class="chanels__img">
+                      <img src="./images/chanels-img.png" alt="chanel" /></span
+                    ><span class="chanels__text">Prom</span></span
+                  >
+                </label>
+              </li>
+              <li class="chanels__item">
+                <label class="checkbox">
+                  <input class="visually-hidden" type="checkbox" /><span
+                    class="checkbox__input chanels__checkbox"
+                    ><span class="chanels__img">
+                      <img src="./images/chanels-img.png" alt="chanel" /></span
+                    ><span class="chanels__text">Prom</span></span
+                  >
+                </label>
+              </li>
+              <li class="chanels__item">
+                <label class="checkbox">
+                  <input class="visually-hidden" type="checkbox" /><span
+                    class="checkbox__input chanels__checkbox"
+                    ><span class="chanels__img">
+                      <img src="./images/chanels-img.png" alt="chanel" /></span
+                    ><span class="chanels__text">Prom</span></span
+                  >
+                </label>
+              </li>
+              <li class="chanels__item">
+                <label class="checkbox">
+                  <input class="visually-hidden" type="checkbox" /><span
+                    class="checkbox__input chanels__checkbox"
+                    ><span class="chanels__img">
+                      <img src="./images/chanels-img.png" alt="chanel" /></span
+                    ><span class="chanels__text">Prom</span></span
+                  >
+                </label>
+              </li>
+              <li class="chanels__item">
+                <label class="checkbox">
+                  <input class="visually-hidden" type="checkbox" /><span
+                    class="checkbox__input chanels__checkbox"
+                    ><span class="chanels__img">
+                      <img src="./images/chanels-img.png" alt="chanel" /></span
+                    ><span class="chanels__text">Prom</span></span
+                  >
+                </label>
+              </li>
+              <li class="chanels__item">
+                <label class="checkbox">
+                  <input class="visually-hidden" type="checkbox" /><span
+                    class="checkbox__input chanels__checkbox"
+                    ><span class="chanels__img">
+                      <img src="./images/chanels-img.png" alt="chanel" /></span
+                    ><span class="chanels__text">Prom</span></span
+                  >
+                </label>
+              </li>
+              <li class="chanels__item">
+                <label class="checkbox">
+                  <input class="visually-hidden" type="checkbox" /><span
+                    class="checkbox__input chanels__checkbox"
+                    ><span class="chanels__img">
+                      <img src="./images/chanels-img.png" alt="chanel" /></span
+                    ><span class="chanels__text">Prom</span></span
+                  >
+                </label>
+              </li>
+              <li class="chanels__item">
+                <label class="checkbox">
+                  <input class="visually-hidden" type="checkbox" /><span
+                    class="checkbox__input chanels__checkbox"
+                    ><span class="chanels__img">
+                      <img src="./images/chanels-img.png" alt="chanel" /></span
+                    ><span class="chanels__text">Prom</span></span
+                  >
+                </label>
+              </li>
+            </ul>
+            <div class="chanels__bottom">
+              <div class="chanels__control items-center">
+                <label class="checkbox check-all">
+                  <input class="visually-hidden" type="checkbox" /><span
+                    class="checkbox__input"
+                    >Выбрать все</span
+                  >
+                </label>
+                <button class="chanels__reset" type="button">
+                  Снять выделение
+                </button>
+              </div>
+              <div class="chanels__btn">
+                <button class="btn btn-bg btn--invers btn--min">
+                  Применить
+                </button>
+                <button class="btn btn-bg btn--min">Очистить</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup -->
+    <div class="popup popup_sect" data-popup="popup_1">
+      <div class="popup_content">
+        <button type="button" class="close_popup"></button>
+        <i class="important_icon"></i>
+        <div class="popup_title">
+          <h2>Вы хотите отменить заказ?</h2>
+        </div>
+        <div class="popup_descript">
+          <p>Номер заказа: <span>647289</span></p>
+          <p>
+            Наименование:
+            <span>Музыкальная система MARSHALL Acoustic Premium</span>
+          </p>
+          <p>Артикул: <span>3345950</span></p>
+        </div>
+        <div class="input_wrapp input_wrapp_2">
+          <div class="input_wrapp_title">
+            <h3>Укажите причину отказа</h3>
+          </div>
+          <textarea placeholder="Введите текст"></textarea>
+        </div>
+        <div class="buttons_wrapp">
+          <div>
+            <button class="inventory__btn btn btn-bg btn--invers btn--min">
+              Да, отменить!
+            </button>
+          </div>
+          <div>
+            <button class="inventory__btn btn btn-bg btn--min close_popup_sub">
+              Нет, не отменять
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup popup_sect" data-popup="popup_2">
+      <div class="popup_content popup_content_2">
+        <button type="button" class="close_popup"></button>
+        <div class="popup_title">
+          <h2>Связаться с поставщиком. Заказ № 33469389</h2>
+        </div>
+        <div class="inner_wrapp">
+          <div class="title_descript">
+            <p>
+              Наименование:
+              <span>Музыкальная система MARSHALL Acoustic Premium</span>
+            </p>
+          </div>
+          <div class="popup_two_cols">
+            <div class="col col_1">
+              <div class="popup_descript">
+                <p>Артикул: <span>3345950</span></p>
+                <p>Цвет: <span>Чернный</span></p>
+                <p>Количество: <b>2</b></p>
+                <p>Сумма заказа: <b>78900 ₽</b></p>
+              </div>
+            </div>
+            <div class="col col_2">
+              <div class="popup_descript">
+                <p>Статус: <b class="green">Ожидает отправки</b></p>
+                <p>Дата создания: <span>29.04.2021</span></p>
+                <p>Время создания: <span>17:23 (GMT +3)</span></p>
+                <p>Планируемая дата доставки: <span>08.05.2021</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="message_wrapp">
+          <div class="message_header">
+            <h3>Ваше сообщение:</h3>
+          </div>
+          <div class="message_box">
+            <textarea
+              placeholder="Пожалуйста, подробно опишите ваш вопрос."
+            ></textarea>
+            <div class="center_align">
+              <div class="file_wrapp">
+                <label class="upload_file"
+                  ><input type="file" name="file" />Прикрепить файлы</label
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="center_align">
+          <div class="buttons_wrapp buttons_wrapp_2">
+            <div>
+              <button
+                class="
+                  inventory__btn
+                  btn btn-bg btn--invers btn--min
+                  padding_btn
+                "
+              >
+                Отправить
+              </button>
+            </div>
+            <div>
+              <button
+                class="
+                  inventory__btn
+                  btn btn-bg btn--min
+                  close_popup_sub
+                  padding_btn
+                "
+              >
+                Отменить
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup popup_sect" data-popup="popup_3">
+      <div class="popup_content popup_content_3">
+        <form>
+          <button type="button" class="close_popup"></button>
+          <div class="popup_title popup_title_2">
+            <h2>Добавить общее ценовое правило</h2>
+          </div>
+          <div class="inner_wrapp">
+            <div class="form_inputs">
+              <div class="input_wrapp">
+                <select class="custom" name="" tabindex="-1">
+                  <option value="val1">Инвентарь</option>
+                  <option value="val1">Value 2</option>
+                  <option value="val1">Value 3</option>
+                  <option value="val1">Value 4</option>
+                  <option value="val1">Value 5</option>
+                </select>
+              </div>
+              <div class="price_inputs_wrapp">
+                <div class="price_inputs_title">
+                  <p>Цена от | до</p>
+                </div>
+                <div class="price_inputs">
+                  <div class="col">
+                    <div class="price_input">
+                      <div>
+                        <input type="number" name="price_1" value="50" />
+                      </div>
+                      <div>
+                        <p>₽</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="price_input">
+                      <div>
+                        <input type="number" name="price_2" value="5000" />
+                      </div>
+                      <div>
+                        <p>₽</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input_wrapp">
+                <select class="custom" name="" tabindex="-1">
+                  <option value="val1">Тип наценки</option>
+                  <option value="val1">Value 2</option>
+                  <option value="val1">Value 3</option>
+                  <option value="val1">Value 4</option>
+                  <option value="val1">Value 5</option>
+                </select>
+              </div>
+              <div class="input_wrapp">
+                <select class="custom" name="" tabindex="-1">
+                  <option value="val1">Наценка</option>
+                  <option value="val1">Value 2</option>
+                  <option value="val1">Value 3</option>
+                  <option value="val1">Value 4</option>
+                  <option value="val1">Value 5</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="popup_checkboxes">
+              <div>
+                <label class="inventory__checkbox checkbox">
+                  <input class="visually-hidden" type="checkbox" /><span
+                    class="checkbox__input"
+                    >Округлять к ближайшему целому<i class="ch_icon"></i
+                  ></span>
+                </label>
+              </div>
+              <div>
+                <label class="inventory__checkbox checkbox">
+                  <input class="visually-hidden" type="checkbox" /><span
+                    class="checkbox__input"
+                    >Округлять к ближайшему<i class="ch_icon"></i
+                  ></span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="center_align">
+            <div class="buttons_wrapp">
+              <div>
+                <button
+                  class="
+                    inventory__btn
+                    btn btn-bg btn--invers btn--min
+                    padding_btn
+                  "
+                >
+                  Сохранить
+                </button>
+              </div>
+              <div>
+                <button
+                  class="
+                    inventory__btn
+                    btn btn-bg btn--min
+                    close_popup_sub
+                    padding_btn
+                  "
+                >
+                  Отменить
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="popup popup_sect" data-popup="popup_4">
+      <div class="popup_content popup_content_4">
+        <form>
+          <button type="button" class="close_popup"></button>
+          <div class="popup_title popup_title_2">
+            <h2>Добавить расширенное ценовое правило</h2>
+          </div>
+          <div class="inner_wrapp">
+            <div class="form_inputs_two_cols">
+              <div class="col">
+                <div class="input_wrapp">
+                  <select class="custom" name="" tabindex="-1">
+                    <option value="val1">Инвентарь</option>
+                    <option value="val1">Value 2</option>
+                    <option value="val1">Value 3</option>
+                    <option value="val1">Value 4</option>
+                    <option value="val1">Value 5</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="input_wrapp">
+                  <select class="custom" name="" tabindex="-1">
+                    <option value="val1">Канал сбыта</option>
+                    <option value="val1">Value 2</option>
+                    <option value="val1">Value 3</option>
+                    <option value="val1">Value 4</option>
+                    <option value="val1">Value 5</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="input_wrapp">
+                  <select class="custom" name="" tabindex="-1">
+                    <option value="val1">Бренд</option>
+                    <option value="val1">Value 2</option>
+                    <option value="val1">Value 3</option>
+                    <option value="val1">Value 4</option>
+                    <option value="val1">Value 5</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="price_inputs_wrapp">
+                  <div class="price_inputs_title">
+                    <p>Цена от | до</p>
+                  </div>
+                  <div class="price_inputs">
+                    <div class="col">
+                      <div class="price_input">
+                        <div>
+                          <input type="number" name="price_1" value="50" />
+                        </div>
+                        <div>
+                          <p>₽</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="price_input">
+                        <div>
+                          <input type="number" name="price_2" value="5000" />
+                        </div>
+                        <div>
+                          <p>₽</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="input_wrapp">
+                  <select class="custom" name="" tabindex="-1">
+                    <option value="val1">Тип наценки</option>
+                    <option value="val1">Value 2</option>
+                    <option value="val1">Value 3</option>
+                    <option value="val1">Value 4</option>
+                    <option value="val1">Value 5</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="input_wrapp">
+                  <select class="custom" name="" tabindex="-1">
+                    <option value="val1">Наценка</option>
+                    <option value="val1">Value 2</option>
+                    <option value="val1">Value 3</option>
+                    <option value="val1">Value 4</option>
+                    <option value="val1">Value 5</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="popup_checkboxes popup_checkboxes_2">
+              <div>
+                <label class="inventory__checkbox checkbox">
+                  <input class="visually-hidden" type="checkbox" /><span
+                    class="checkbox__input"
+                    >Округлять к ближайшему целому<i class="ch_icon"></i
+                  ></span>
+                </label>
+              </div>
+              <div>
+                <label class="inventory__checkbox checkbox">
+                  <input class="visually-hidden" type="checkbox" /><span
+                    class="checkbox__input"
+                    >Округлять к ближайшему<i class="ch_icon"></i
+                  ></span>
+                </label>
+              </div>
+            </div>
+
+            <div class="center_align">
+              <div class="buttons_wrapp">
+                <div>
+                  <button
+                    class="
+                      inventory__btn
+                      btn btn-bg btn--invers btn--min
+                      padding_btn
+                    "
+                  >
+                    Сохранить
+                  </button>
+                </div>
+                <div>
+                  <button
+                    class="
+                      inventory__btn
+                      btn btn-bg btn--min
+                      close_popup_sub
+                      padding_btn
+                    "
+                  >
+                    Отменить
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="popup_bg"></div>
+    <!-- Popup -->
+
+    <script src="js/libs.min.js"></script>
+    <!-- <script src="js/main.min.js"></script> -->
+    <script src="js/main.js"></script>
+    <script src="js/add_scripts.js"></script>
+
+    <!-- Test task script -->
+    <script src="js/test.js"></script>
+  </body>
+</html>
